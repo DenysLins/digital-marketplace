@@ -7,10 +7,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from './ui/button'
 
-type Category = (typeof PRODUCT_CATEGORIES)[number]
+type CategoryType = (typeof PRODUCT_CATEGORIES)[number]
 
 interface NavItemProps {
-  category: Category
+  category: CategoryType
   handleOpen: () => void
   isOpen: boolean
   isAnyOpen: boolean
