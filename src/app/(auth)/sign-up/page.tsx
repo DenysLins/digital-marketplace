@@ -9,6 +9,7 @@ import {
   AuthCredentialsValidator,
   AuthCredentialsValidatorType,
 } from '@/lib/validators/auth-credentials-validator'
+import { trpc } from '@/trpc/client'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -23,8 +24,10 @@ const Page = () => {
     resolver: zodResolver(AuthCredentialsValidator),
   })
 
-  const onSubmit = (data: AuthCredentialsValidatorType) => {
-    console.log(data)
+  const { mutate, isLoading } = trpc.auth.createPayloadUser.useMutation()
+
+  const onSubmit = ({ email, password }: AuthCredentialsValidatorType) => {
+    mutate({ email, password })
   }
 
   return (

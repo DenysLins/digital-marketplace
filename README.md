@@ -31,3 +31,5 @@ To access the Content Management System (CMS), go to [http://localhost:3000/sell
 - [Ludice](https://lucide.dev/)
 - [Payload CMS](https://payloadcms.com/)
 - [Express](https://expressjs.com/)
+- [tRPC](https://trpc.io/)
+- [Resend](https://resend.io/)
