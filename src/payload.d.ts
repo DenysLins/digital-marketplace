@@ -42,7 +42,7 @@ export interface Product {
   price: number;
   category: 'ui_kits' | 'icons';
   product_file: string | ProductFile;
-  aproveForSale?: ('pending' | 'approved' | 'denied') | null;
+  approvedForSale?: ('pending' | 'approved' | 'denied') | null;
   priceId?: string | null;
   stripeId?: string | null;
   images: {
