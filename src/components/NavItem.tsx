@@ -21,7 +21,7 @@ const NavItem = ({ category, handleOpen, isOpen, isAnyOpen }: NavItemProps) => {
     <div className="flex">
       <div className="relative flex items-center">
         <Button
-          className="gap-1,5"
+          className="gap-1.5"
           onClick={handleOpen}
           variant={isOpen ? 'secondary' : 'ghost'}
         >
@@ -44,7 +44,7 @@ const NavItem = ({ category, handleOpen, isOpen, isAnyOpen }: NavItemProps) => {
           )}
         >
           <div
-            className="absolute inset-0 top1/2 bg-white shadow"
+            className="absolute inset-0 top-1/2 bg-white shadow"
             aria-hidden="true"
           />
           <div className="relative bg-white">

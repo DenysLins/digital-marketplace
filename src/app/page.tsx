@@ -31,7 +31,7 @@ export default function Home() {
       <MaxWidthWrapper>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Your marketplace for hight-quality{' '}
+            Your marketplace for high-quality{' '}
             <span className="text-blue-600">digital products</span>.
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
@@ -60,7 +60,7 @@ export default function Home() {
             {perks.map(({ name, Icon, description }) => (
               <div
                 key={name}
-                className="text-center md:items-start md:text-left lg:block lg:text-center"
+                className="text-center md:flex md:items-start md:text-left lg:block lg:text-center"
               >
                 <div className="md:flex-shrink-0 flex justify-center">
                   <div className="h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900">
