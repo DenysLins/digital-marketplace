@@ -9,7 +9,24 @@ Marketplace for digital products
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn
+```
+
+Then, create a `.env` file in the root of the project with the following content:
+
+```env
+NEXT_PUBLIC_SERVER_URL=http://localhost:3000
+PAYLOAD_SECRET=
+MONGODB_URL=mongodb://localhost:27017
+RESEND_API_KEY=
+```
+
+Now, run the development server:
 
 ```bash
 npm run dev
@@ -28,7 +45,7 @@ To access the Content Management System (CMS), go to [http://localhost:3000/sell
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
-- [Ludice](https://lucide.dev/)
+- [Lucide](https://lucide.dev/)
 - [Payload CMS](https://payloadcms.com/)
 - [Express](https://expressjs.com/)
 - [tRPC](https://trpc.io/)
