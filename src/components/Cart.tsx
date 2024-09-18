@@ -40,7 +40,7 @@ const Cart = () => {
             <div className="flex w-full flex-col pr-6">Cart items</div>
             <div className="space-y-4 pr-6">
               <Separator />
-              <div className="space-y-1 5 text-sm">
+              <div className="space-y-1.5 text-sm">
                 <div className="flex">
                   <span className="flex-1">Shipping</span>
                   <span>Free</span>
@@ -80,7 +80,7 @@ const Cart = () => {
                 alt="empty shopping cart"
               />
             </div>
-            <div className="text-xl font-semibold">Your Cart is empty</div>
+            <div className="text-xl font-semibold">Your cart is empty</div>
             <SheetTrigger asChild>
               <Link
                 href="/products"
